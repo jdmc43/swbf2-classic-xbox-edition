@@ -1,0 +1,8 @@
+# built / downloaded
+/dist/
+/xbox/
+/shots/
+/installer/bin/
+/installer/*.exe
+__pycache__/
+*.pyc
