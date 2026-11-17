@@ -206,7 +206,7 @@ def public_parts():
     shutil.copy(os.path.join(HERE, "installer", "bin", "7zr.exe"), bin_)
     with zipfile.ZipFile(os.path.join(HERE, "installer", "bin", "python-embed.zip")) as zf:
         zf.extractall(os.path.join(bin_, "python"))
-    for f in ("LICENSE.txt", "THIRD-PARTY-NOTICES.txt"):
+    for f in ("LICENSE.txt", "NOTICE.txt", "THIRD-PARTY-NOTICES.txt"):
         shutil.copy(os.path.join(HERE, "installer", f), os.path.join(OUT, f))
 
 
@@ -221,10 +221,14 @@ The PC game played and presented like the original Xbox version, with a controll
 - Instant Action (ALT) console map screen, controller navigation in the menus
 
 This package contains only this mod's own code. The installer builds the mod files on your PC from:
-  1. Star Wars Battlefront II Classic (Steam, 2024 update)                 - you own it
-  2. the "Battlefront II Remaster" mod by Anakin (Jan 2026), installed     - Nexus Mods / ModDB
-  3. BAD-AL's "UOP controller patch" 1.1 (GameData.7z)                   - github.com/BAD-AL/data_UOP_controller_patch
-     The installer finds GameData.7z next to Install.exe or in Downloads, or downloads it from there.
+  1. Star Wars Battlefront II Classic (Steam, 2024 update)
+       https://store.steampowered.com/app/6060/
+  2. the "Battlefront II Remaster" by Anakin (Jan 2026) - download "Battlefront 2 Remaster Installer
+     (Jan 2026)" from the Files tab and install it:
+       https://www.nexusmods.com/battlefront2/mods/1191
+  3. BAD-AL's "UOP controller patch" 1.1 - its GameData.7z (do not install it, the installer only reads it):
+       https://github.com/BAD-AL/data_UOP_controller_patch/releases/tag/1.1
+     The installer finds GameData.7z next to Install.exe or in your Downloads folder, or downloads it itself.
   4. optional: your own Xbox "Star Wars Battlefront II" disc image (.iso) - for the Xbox HUD
 
 INSTALL
@@ -258,8 +262,9 @@ Instant Action options > Heroes. "Assign To: Best Player" counts the bots, so yo
 
 CREDITS
 Battlefront II Remaster by Anakin and its contributors; UOP controller patch by BAD-AL; Unofficial Patch v1.3
-by Zerted. This mod needs their work but does not contain it. Bundled tools: Python 3.12 (PSF license),
-7-Zip 7zr.exe (LGPL), Lua 5.0.2 (MIT) - see THIRD-PARTY-NOTICES.txt.
+by Zerted. This mod needs their work but does not contain it. This mod's code: Apache License 2.0
+(LICENSE.txt, NOTICE.txt). Bundled tools: Python 3.12 (PSF license), 7-Zip 7zr.exe (LGPL), Lua 5.0.2 (MIT) -
+see THIRD-PARTY-NOTICES.txt.
 """
 
 PUBLIC = "--public" in sys.argv

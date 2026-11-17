@@ -151,7 +151,8 @@ static class Installer
     static void Install()
     {
         if (!Directory.Exists(Path.Combine(Root, @"addon\Remaster")))
-            throw new Exception("The Battlefront II Remaster (addon\\Remaster) is not installed. Install it first.");
+            throw new Exception("The Battlefront II Remaster (addon\\Remaster) is not installed. Install it first:\n"
+                + "       " + RemasterUrl + "  (Files: \"Battlefront 2 Remaster Installer (Jan 2026)\")");
         Directory.CreateDirectory(Backup);
         FilesRoot = Directory.Exists(Path.Combine(Payload, "files")) ? Path.Combine(Payload, "files") : BuildFromSources();
         string createdList = Path.Combine(Backup, "created.txt");
@@ -225,6 +226,7 @@ static class Installer
     // ---------------------------------------------------------------- build (public package)
     // The mod files are built here, on the player's PC, from their own Remaster install, BAD-AL's controller
     // patch release and (optional) their own Xbox disc image - nothing of those projects is in this package.
+    const string RemasterUrl = "https://www.nexusmods.com/battlefront2/mods/1191";
     const string CtrlUrl = "https://github.com/BAD-AL/data_UOP_controller_patch/releases/download/1.1/GameData.7z";
     static readonly string[] Baseline = {
         @"data\_lvl_pc\shell.lvl", @"data\_lvl_pc\ingame.lvl", @"data\_lvl_pc\common.lvl", @"data\_lvl_pc\core.lvl",

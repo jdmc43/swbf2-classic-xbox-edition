@@ -1,0 +1,6 @@
+Star Wars Battlefront II Classic - Xbox Edition
+Copyright 2026 jdmc43
+
+Licensed under the Apache License, Version 2.0 (LICENSE.txt). This license covers this mod's own code only.
+Star Wars Battlefront II, the Battlefront II Remaster (Anakin) and the UOP controller patch (BAD-AL) belong to
+their owners; this mod does not contain them. Bundled third-party tools: see THIRD-PARTY-NOTICES.txt.

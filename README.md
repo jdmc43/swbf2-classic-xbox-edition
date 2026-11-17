@@ -10,10 +10,12 @@ builds the mod files on your PC from your own installs:
 
 | Needed | Where |
 |---|---|
-| Star Wars Battlefront II Classic (Steam) | you own it |
-| Battlefront II Remaster (Jan 2026) by Anakin | Nexus Mods / ModDB |
-| UOP controller patch 1.1 (`GameData.7z`) by BAD-AL | https://github.com/BAD-AL/data_UOP_controller_patch (the installer can download it) |
-| optional: your own Xbox *Star Wars Battlefront II* disc image | for the Xbox HUD |
+| Star Wars Battlefront II Classic (Steam, 2024 update) | [Steam store](https://store.steampowered.com/app/6060/) |
+| Battlefront II Remaster (Jan 2026) by Anakin – install it | [Nexus Mods](https://www.nexusmods.com/battlefront2/mods/1191), Files tab: "Battlefront 2 Remaster Installer (Jan 2026)" |
+| UOP controller patch 1.1 by BAD-AL – just its `GameData.7z`, not installed | [GitHub release](https://github.com/BAD-AL/data_UOP_controller_patch/releases/tag/1.1) (the installer can download it) |
+| optional: your own Xbox *Star Wars Battlefront II* disc image (.iso) | for the Xbox HUD |
+
+Download the mod itself from this repository's [Releases](../../releases).
 
 ## How it works
 
@@ -48,7 +50,8 @@ variants (see their headers).
 
 ## License
 
-This mod's code: MIT (`LICENSE`). Bundled: Lua 5.0.2 (MIT), Python 3.12 (PSF), 7-Zip `7zr.exe` (LGPL) – see
+This mod's code: Apache License 2.0 (`LICENSE`, `NOTICE`). Bundled: Lua 5.0.2 (MIT), Python 3.12 (PSF),
+7-Zip `7zr.exe` (LGPL) – see
 `installer/THIRD-PARTY-NOTICES.txt`. Star Wars Battlefront II, the Battlefront II Remaster, the UOP controller
 patch and the Unofficial Patch belong to their owners and are not part of this repository.
 
